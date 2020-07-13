@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tinnova.ApplicationTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-07-13T20:49:18" hostname="Andre-PC" time="1.11">
+  <properties/>
+  <testcase name="shouldQueryEntity" classname="tinnova.ApplicationTests" time="0.876"/>
+  <testcase name="shouldCreateEntity" classname="tinnova.ApplicationTests" time="0.025"/>
+  <testcase name="shouldUpdateEntity" classname="tinnova.ApplicationTests" time="0.101"/>
+  <testcase name="shouldRetrieveEntity" classname="tinnova.ApplicationTests" time="0.024"/>
+  <testcase name="shouldDeleteEntity" classname="tinnova.ApplicationTests" time="0.026"/>
+  <testcase name="shouldReturnRepositoryIndex" classname="tinnova.ApplicationTests" time="0.02"/>
+  <testcase name="shouldPartiallyUpdateEntity" classname="tinnova.ApplicationTests" time="0.031"/>
+  <system-out><![CDATA[17:49:09.589 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class tinnova.ApplicationTests]
+17:49:09.599 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:49:09.610 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:49:09.643 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [tinnova.ApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:49:09.658 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [tinnova.ApplicationTests], using SpringBootContextLoader
+17:49:09.662 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [tinnova.ApplicationTests]: class path resource [tinnova/ApplicationTests-context.xml] does not exist
+17:49:09.663 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [tinnova.ApplicationTests]: class path resource [tinnova/ApplicationTestsContext.groovy] does not exist
+17:49:09.663 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [tinnova.ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:49:09.664 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [tinnova.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:49:09.738 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [tinnova.ApplicationTests]
+17:49:09.838 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Andre\Projects\Java\interviews\tinnova\veiculos\build\classes\java\main\tinnova\Application.class]
+17:49:09.847 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration tinnova.Application for test class tinnova.ApplicationTests
+17:49:09.989 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [tinnova.ApplicationTests]: using defaults.
+17:49:09.990 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:49:10.015 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7ac0ce22, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6c7a2736, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3b90e4f4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7a85efcc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6c89f60, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3b364b18, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7bdafce, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5293cb7a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10e26dd7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@19858a58, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@732c9579, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3f28487d]
+17:49:10.019 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [tinnova.ApplicationTests]
+17:49:10.020 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [tinnova.ApplicationTests]
+17:49:10.021 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [tinnova.ApplicationTests]
+17:49:10.021 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [tinnova.ApplicationTests]
+17:49:10.030 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@138ffb5b testClass = ApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4fab7d73 testClass = ApplicationTests, locations = '{}', classes = '{class tinnova.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3f7841c9, [ImportsContextCustomizer@e2510be key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4259b805, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7b221bd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2ca1b4fd], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+17:49:10.032 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [tinnova.ApplicationTests]
+17:49:10.032 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [tinnova.ApplicationTests]
+17:49:10.061 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2020-07-13 17:49:10.426  INFO 509640 --- [    Test worker] tinnova.ApplicationTests                 : Starting ApplicationTests on Andre-PC with PID 509640 (started by Andre in C:\Users\Andre\Projects\Java\interviews\tinnova\veiculos)
+2020-07-13 17:49:10.428  INFO 509640 --- [    Test worker] tinnova.ApplicationTests                 : No active profile set, falling back to default profiles: default
+2020-07-13 17:49:11.539  INFO 509640 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-07-13 17:49:11.656  INFO 509640 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 1 repository interfaces.
+2020-07-13 17:49:12.210  INFO 509640 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$e297ae84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-13 17:49:15.559  INFO 509640 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-07-13 17:49:15.648  INFO 509640 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:35}] to localhost:27017
+2020-07-13 17:49:15.654  INFO 509640 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 8]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3789700}
+2020-07-13 17:49:17.206  INFO 509640 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-13 17:49:17.970  INFO 509640 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-07-13 17:49:17.970  INFO 509640 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-07-13 17:49:17.995  INFO 509640 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 25 ms
+2020-07-13 17:49:18.049  INFO 509640 --- [    Test worker] tinnova.ApplicationTests                 : Started ApplicationTests in 7.972 seconds (JVM running for 10.276)
+2020-07-13 17:49:18.465  INFO 509640 --- [    Test worker] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:36}] to localhost:27017
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.data.rest.webmvc.RepositoryController
+           Method = public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/hal+json;charset=UTF-8"]
+     Content type = application/hal+json;charset=UTF-8
+             Body = {
+  "_links" : {
+    "veiculo" : {
+      "href" : "http://localhost/veiculos{?page,size,sort}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://localhost/profile"
+    }
+  }
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
